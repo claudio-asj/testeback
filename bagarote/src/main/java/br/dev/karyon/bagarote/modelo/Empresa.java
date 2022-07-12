@@ -17,14 +17,21 @@ public class Empresa {
 	@ManyToOne
 	private LojaFisica lojaFisica;
 	
-	
-	public Empresa (String cnpj, String nomeFantasia, String razaoSocial, LojaFisica lojaFisica) {
-		this.cnpj = cnpj;
-		this.nomefantasia = nomeFantasia;
-		this.razaosocial = razaoSocial;
-		this.lojaFisica = lojaFisica;
+	public Empresa() {
+		
 	}
 	
+	
+	public Empresa(String cnpj, String nomefantasia, LojaFisica lojaFisica) {
+		super();
+		this.cnpj = cnpj;
+		this.nomefantasia = nomefantasia;
+		this.lojaFisica = lojaFisica;
+
+	}
+
+
+
 	public Long getId() {
 		return id;
 	}

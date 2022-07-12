@@ -21,12 +21,6 @@ public class LojaFisica {
 	@ManyToOne
 	private Empresa empresa;
 	
-	public LojaFisica(String cnpj, String nomeLoja, String enderecoCompleto) {
-		this.cnpj = cnpj;
-		this.nomecompleto = nomeLoja;
-		this.enderecocompleto = enderecoCompleto;
-	}
-	
 	
 	public Empresa getEmpresa() {
 		return empresa;
