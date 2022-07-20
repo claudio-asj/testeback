@@ -28,7 +28,6 @@ public class EmpresaDto {
 	}
 
 	public static List<EmpresaDto> converter(List<Empresa> empresas) {
-		// TODO Auto-generated method stub
 		return empresas.stream().map(EmpresaDto::new).collect(Collectors.toList());
 	}
 	

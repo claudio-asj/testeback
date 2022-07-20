@@ -9,6 +9,8 @@ public class EmpresaForm {
 	private String cnpj;
 	private String nomefantasia;
 	private String nomeloja;
+	
+	
 	public String getCnpj() {
 		return cnpj;
 	}
